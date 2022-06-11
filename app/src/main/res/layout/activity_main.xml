@@ -7,12 +7,26 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Clique no biscoito da sorte!"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="184dp"
+        android:layout_height="151dp"
+        android:onClick="clicou"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto"
+        app:srcCompat="@drawable/biscoito" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
